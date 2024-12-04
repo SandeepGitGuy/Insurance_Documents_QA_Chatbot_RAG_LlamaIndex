@@ -25,7 +25,7 @@ The Insurance Documents RAG QA Chatbot is a smart solution for answering queries
 
 ## 🛠️ Tech Stack  
 - **Language**: Python  
-- **Frameworks/Libraries**: PDFPlumber, ChromaDB, Pandas, Numpy, Torch, Transformers  
+- **Frameworks/Libraries**: LlamaIndex, ChromaDB, DiskCache 
 - **APIs/Models**:  
   - OpenAI's Embedding Model for vector creation  
   - LlamaIndex for document ingestion and querying  
@@ -37,21 +37,46 @@ The Insurance Documents RAG QA Chatbot is a smart solution for answering queries
 - "What is covered under this insurance policy?"  
 - "What is the claim settlement process for my policy?"  
 
----  
+---
 
-## 🚀 Getting Started  
+## 📸 Sample Output
+### 1. Sample Code Output
+![Sample Code Output](Sample%20Code%20output%20Screenshots/Sample%20Code%20output%201.png)
 
-### Prerequisites  
-Ensure you have the following installed:  
-- Python 3.8+  
+### 2. Sample Code Output Cache Response
+![Sample Code Output Cache Response](Sample%20Code%20output%20Screenshots/Sample%20Code%20output%202.png)
 
----  
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.8+
+- Docker (optional, for containerized deployment)
+
+### Installation
+1. Clone the repo:
+git clone https://github.com/SandeepGitGuy/Insurance_Documents_QA_Chatbot_RAG_LlamaIndex.git
+
+2. Navigate to the project directory:
+cd Insurance_Documents_QA_Chatbot_RAG_LlamaIndex
+
+3. Install the required dependencies:
+pip install -r requirements.txt
+
+- Please note: OpenAI API keys are required for the project to function.
+
+4. Run the main file from Jupyter environment:
+"Insurance_Doc_llamaindex_RAG.ipynb"
+
+---
 
 ## 🛠️ Challenges/Issues Addressed  
-1. **Optimized PDF Parsing**: Enhanced extraction and chunking using PDFPlumber for seamless data ingestion.  
+1. **Optimized PDF Parsing**: Enhanced extraction and chunking using Llamaindex's Ingestion pipeline for seamless data ingestion.  
 2. **Embedding Efficiency**: Added an embedding cache to reduce redundant embeddings in ChromaDB.  
 3. **Query Optimization**: Integrated a query cache to prevent duplicate searches and improve response times.  
-4. **Enhanced Passage Ranking**: Introduced a Cross-Encoder-based reranker for better relevance in retrieved sections.  
+4. **Enhanced Passage Ranking**: Introduced a reranker for better relevance in retrieved sections.  
 5. **Dynamic Embedding Updates**: Leveraged OpenAI's embedding model for high-quality vector representation.  
 
 ---  
@@ -64,14 +89,11 @@ Ensure you have the following installed:
 ---  
 
 ## 📖 Documentation  
-Refer to these resources for detailed usage:  
+No documentation will be made available for this project since this project only uses technologies that already have their own documentation. Please refer to the following links for more information:  
 - [LlamaIndex](https://llamaindex.ai/docs/)  
 - [OpenAI](https://platform.openai.com/docs/)  
-- [ChromaDB](https://docs.trychroma.com/)  
-- [PDFPlumber](https://pypi.org/project/pdfplumber/)  
-- [Pandas](https://pandas.pydata.org/docs/)  
-- [Transformers](https://huggingface.co/docs/transformers/index)  
-- [Torch](https://pytorch.org/docs/stable/index.html)  
+- [ChromaDB](https://docs.trychroma.com/)
+- [DiskCache](https://pypi.org/project/diskcache/)
 
 ---  
 
@@ -88,6 +110,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 💬 Contact  
 For any queries or feedback, reach out via:  
 
-- **Email**: sandy974278@gmail.com  
-- **GitHub**: https://github.com/SandeepGitGuy  
-- **LinkedIn**: www.linkedin.com/in/sandeepgowda24a319192  
+- **Email**: sandy974278@gmail.com
+- **GitHub**: https://github.com/SandeepGitGuy
+- **LinkedIn**: www.linkedin.com/in/sandeepgowda24a319192
+
+---
